@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="course.examples.todolist.MainActivity"
+    android:weightSum="1"
+    android:background="@drawable/back">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="314dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.24"
+        android:text="To Do List"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:ems="10"
+        android:hint="input task"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:inputType="text"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:ems="10"
+        android:hint="input task description"
+        android:inputType="text"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="314dp"
+        android:layout_height="208dp"
+        android:layout_weight="0.12"
+        android:background="@drawable/list_shape"
+        android:dividerHeight="3dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="onclick"
+        android:text="Add"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</LinearLayout>
